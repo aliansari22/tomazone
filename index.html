@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تومازون: کلون صفحه اصلی</title>
+    
+    <!-- Google Fonts: Vazirmatn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Overlay for Side Menu -->
+    <div class="overlay"></div>
+
+    <!-- Side Menu (for Hamburger) -->
+    <div id="side-menu" class="side-menu">
+        <a href="#" class="close-btn">×</a>
+        <h3>سلام، وارد شوید</h3>
+        <ul>
+            <li><strong>پرفروش‌ترین‌ها</strong></li>
+            <li><a href="#">کتاب‌ها</a></li>
+            <li><a href="#">لوازم الکترونیکی</a></li>
+            <li><strong>خرید بر اساس دسته‌بندی</strong></li>
+            <li><a href="#">خانه و آشپزخانه</a></li>
+            <li><a href="#">مد و پوشاک</a></li>
+            <li><a href="#">ورزش و سفر</a></li>
+        </ul>
+    </div>
+
+    <!-- ===== SECTION A: Main Header ===== -->
+    <header class="main-header">
+        <div class="header-left">
+            <a href="#" class="header-logo">تومازون</a>
+            <a href="#" class="header-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <span>تحویل به</span>
+                    <strong>ایران</strong>
+                </div>
+            </a>
+        </div>
+
+        <div class="header-search">
+            <div class="search-category">
+                <span>همه <i class="fas fa-caret-down"></i></span>
+                <select>
+                    <option>همه</option>
+                    <option>کتاب‌ها</option>
+                    <option>لوازم الکترونیکی</option>
+                    <option>خانه و آشپزخانه</option>
+                </select>
+            </div>
+            <input type="text" placeholder="جستجو در تومازون...">
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div class="header-right">
+            <a href="#" class="header-link">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg" alt="پرچم ایران" width="25">
+                <span>FA</span>
+            </a>
+            <div class="header-link account-menu-container">
+                <a href="#">
+                    <span>سلام، وارد شوید</span>
+                    <strong>حساب کاربری و فهرست‌ها <i class="fas fa-caret-down"></i></strong>
+                </a>
+                <div class="dropdown-content">
+                    <button>ورود</button>
+                    <p>مشتری جدید هستید؟ <a href="#">از اینجا شروع کنید.</a></p>
+                </div>
+            </div>
+            <a href="#" class="header-link">
+                
+                <strong>سفارش‌ها</strong>
+            </a>
+            <a href="#" class="header-link header-cart">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+                <span class="cart-count">0</span>
+                <strong>سبد خرید</strong>
+            </a>
+        </div>
+    </header>
+
+    <!-- ===== SECTION B: Sub-Navigation Header ===== -->
+    <nav class="sub-nav">
+        <ul>
+            <li><a href="#" id="hamburger-menu"><i class="fas fa-bars"></i> همه</a></li>
+            <li><a href="#">پرفروش‌ترین‌ها</a></li>
+            <li><a href="#">تخفیف‌های شگفت‌انگیز</a></li>
+            <li><a href="#">خدمات مشتریان</a></li>
+            <li><a href="#">کارت‌های هدیه</a></li>
+            <li><a href="#">فروش</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- ===== SECTION C: Hero Section ===== -->
+        <section class="hero-section">
+            <div class="hero-slider">
+                <img src="https://images.pexels.com/photos/777001/pexels-photo-777001.jpeg?auto=compress&cs=tinysrgb&w=1500&h=600&fit=crop" class="slide active" alt="فروش ویژه لوازم الکترونیکی مدرن">
+                <img src="https://images.pexels.com/photos/2228561/pexels-photo-2228561.jpeg?auto=compress&cs=tinysrgb&w=1500&h=600&fit=crop" class="slide" alt="مجموعه کتاب‌های جدید و پرفروش">
+                <img src="https://images.pexels.com/photos/6438762/pexels-photo-6438762.jpeg?auto=compress&cs=tinysrgb&w=1500&h=600&fit=crop" class="slide" alt="مبلمان و دکوراسیون منزل">
+            </div>
+            <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </section>
+
+        <!-- ===== SECTION D: Grid of Product Category Cards ===== -->
+        <section class="category-grid">
+            <div class="card">
+                <h2>لوازم الکترونیکی</h2>
+                <div class="card-content-grid">
+                    <div><img src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="گوشی‌های هوشمند"><p>گوشی‌های هوشمند</p></div>
+                    <div><img src="https://images.pexels.com/photos/4005596/pexels-photo-4005596.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="لپ‌تاپ‌ها"><p>لپ‌تاپ‌ها</p></div>
+                    <div><img src="https://images.pexels.com/photos/5721865/pexels-photo-5721865.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="تلویزیون"><p>تلویزیون</p></div>
+                    <div><img src="https://images.pexels.com/photos/3585093/pexels-photo-3585093.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="لوازم جانبی"><p>لوازم جانبی</p></div>
+                </div>
+                <a href="#">بیشتر ببینید</a>
+            </div>
+            <div class="card">
+                <h2>خانه و آشپزخانه</h2>
+                <div class="card-content-grid">
+                    <div><img src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="مبلمان"><p>مبلمان</p></div>
+                    <div><img src="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="دکوراسیون"><p>دکوراسیون</p></div>
+                    <div><img src="https://images.pexels.com/photos/5842843/pexels-photo-5842843.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="لوازم پخت و پز"><p>لوازم پخت و پز</p></div>
+                    <div><img src="https://images.pexels.com/photos/4239031/pexels-photo-4239031.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="لوازم نظافت"><p>لوازم نظافت</p></div>
+                </div>
+                <a href="#">بیشتر ببینید</a>
+            </div>
+            <div class="card">
+                <h2>مد و پوشاک</h2>
+                <div class="card-content-grid">
+                    <div><img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="لباس زنانه"><p>لباس زنانه</p></div>
+                    <div><img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="لباس مردانه"><p>لباس مردانه</p></div>
+                    <div><img src="https://images.pexels.com/photos/1478442/pexels-photo-1478442.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="کفش"><p>کفش</p></div>
+                    <div><img src="https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="ساعت"><p>ساعت</p></div>
+                </div>
+                <a href="#">بیشتر ببینید</a>
+            </div>
+            <div class="card">
+                <h2>کتاب و لوازم تحریر</h2>
+                <div class="card-content-grid">
+                    <div><img src="https://images.pexels.com/photos/2041556/pexels-photo-2041556.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="رمان"><p>رمان و داستان</p></div>
+                    <div><img src="https://images.pexels.com/photos/256450/pexels-photo-256450.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="کتاب کودک"><p>کتاب کودک</p></div>
+                    <div><img src="https://images.pexels.com/photos/265076/pexels-photo-265076.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="کتاب درسی"><p>کمک درسی</p></div>
+                    <div><img src="https://images.pexels.com/photos/6334351/pexels-photo-6334351.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="نوشت افزار"><p>نوشت افزار</p></div>
+                </div>
+                <a href="#">بیشتر ببینید</a>
+            </div>
+        </section>
+
+        <!-- ===== SECTION E: Horizontal Scrolling Product Carousels ===== -->
+        <section class="product-carousel">
+            <h2>پرفروش‌ترین‌ها در کتاب</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-carousel-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-track-container">
+                    <div class="carousel-track">
+                        <div class="product-item"><img src="https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="کتاب باز با صفحات واضح"><p>کتاب ملت عشق</p><div class="rating"><i class="fas fa-star"></i> 4.8</div><p class="price">۲۵۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="https://images.pexels.com/photos/2904142/pexels-photo-2904142.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="کتاب با جلد تیره"><p>کتاب بوف کور</p><div class="rating"><i class="fas fa-star"></i> 4.5</div><p class="price">۱۸۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="https://images.pexels.com/photos/1165999/pexels-photo-1165999.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="کتابی با جلد رنگارنگ"><p>کتاب شازده کوچولو</p><div class="rating"><i class="fas fa-star"></i> 4.9</div><p class="price">۱۲۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="https://images.pexels.com/photos/2228580/pexels-photo-2228580.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="کتاب با طرح کلاسیک"><p>کتاب صد سال تنهایی</p><div class="rating"><i class="fas fa-star"></i> 4.7</div><p class="price">۳۱۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="https://images.pexels.com/photos/1319854/pexels-photo-1319854.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="کتابی با جلد روشن"><p>کتاب کیمیاگر</p><div class="rating"><i class="fas fa-star"></i> 4.6</div><p class="price">۱۹۵,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="https://images.pexels.com/photos/2904142/pexels-photo-2904142.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="کتاب با جلد تیره"><p>کتاب بوف کور</p><div class="rating"><i class="fas fa-star"></i> 4.5</div><p class="price">۱۸۰,۰۰۰ تومان</p></div>
+                        
+                    </div>
+                </div>
+                <button class="carousel-btn next-carousel-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="product-carousel">
+            <h2>پیشنهادها برای شما</h2>
+            <div class="carousel-container">
+                 <button class="carousel-btn prev-carousel-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-track-container">
+                    <div class="carousel-track">
+                        <div class="product-item"><img src="https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="هدفون بی سیم روی سر"><p>هدفون بی سیم</p><div class="rating"><i class="fas fa-star"></i> 4.4</div><p class="price">۱,۲۰۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="ساعت هوشمند روی مچ دست"><p>ساعت هوشمند جدید</p><div class="rating"><i class="fas fa-star"></i> 4.7</div><p class="price">۲,۵۰۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="https://images.pexels.com/photos/5632349/pexels-photo-5632349.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="دستگاه قهوه ساز برقی"><p>دستگاه قهوه ساز</p><div class="rating"><i class="fas fa-star"></i> 4.6</div><p class="price">۳,۱۰۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="یک جفت کفش ورزشی"><p>کفش مخصوص دویدن</p><div class="rating"><i class="fas fa-star"></i> 4.8</div><p class="price">۱,۸۵۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="دوربین عکاسی دیجیتال"><p>دوربین عکاسی DSLR</p><div class="rating"><i class="fas fa-star"></i> 4.9</div><p class="price">۱۵,۷۰۰,۰۰۰ تومان</p></div>
+                    </div>
+                </div>
+                <button class="carousel-btn next-carousel-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== SECTION F: Footer ===== -->
+    <footer>
+        <div class="footer-back-to-top">
+            <a href="#">بازگشت به بالا</a>
+        </div>
+
+        <div class="footer-main">
+            <div class="footer-column">
+                <h3>با ما آشنا شوید</h3>
+                <ul>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">فرصت‌های شغلی</a></li>
+                    <li><a href="#">گزارش سالانه</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>کسب و کار با ما</h3>
+                <ul>
+                    <li><a href="#">فروش در تومازون</a></li>
+                    <li><a href="#">همکاری در فروش</a></li>
+                    <li><a href="#">تبلیغات محصولات</a></li>
+                </ul>
+            </div>
+             <div class="footer-column">
+                <h3>راهنمای خرید</h3>
+                <ul>
+                    <li><a href="#">نحوه ثبت سفارش</a></li>
+                    <li><a href="#">رویه ارسال سفارش</a></li>
+                    <li><a href="#">شیوه‌های پرداخت</a></li>
+                </ul>
+            </div>
+             <div class="footer-column">
+                <h3>خدمات مشتریان</h3>
+                <ul>
+                    <li><a href="#">پاسخ به پرسش‌های متداول</a></li>
+                    <li><a href="#">رویه‌های بازگرداندن کالا</a></li>
+                    <li><a href="#">حریم خصوصی</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span class="header-logo">تومازون</span>
+            <p direction="ltr">2025 © Tomazone.com, Inc. or its affiliates</p>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>
