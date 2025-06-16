@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تومازون: کلون صفحه اصلی</title>
+    <title>تومازون: صفحه اصلی</title>
     
     <!-- Google Fonts: Vazirmatn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,16 @@
     
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Optional: Add a subtle transition effect for when images load */
+        img.lazy {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        img:not(.lazy) {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
 
@@ -108,9 +118,9 @@
         <!-- ===== SECTION C: Hero Section ===== -->
         <section class="hero-section">
             <div class="hero-slider">
-                <img src="https://images.pexels.com/photos/777001/pexels-photo-777001.jpeg?auto=compress&cs=tinysrgb&w=1500&h=600&fit=crop" class="slide active" alt="فروش ویژه لوازم الکترونیکی مدرن">
-                <img src="https://images.pexels.com/photos/2228561/pexels-photo-2228561.jpeg?auto=compress&cs=tinysrgb&w=1500&h=600&fit=crop" class="slide" alt="مجموعه کتاب‌های جدید و پرفروش">
-                <img src="https://images.pexels.com/photos/6438762/pexels-photo-6438762.jpeg?auto=compress&cs=tinysrgb&w=1500&h=600&fit=crop" class="slide" alt="مبلمان و دکوراسیون منزل">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/777001/pexels-photo-777001.jpeg?auto=compress&cs=tinysrgb&w=1500&h=600&fit=crop" class="slide active lazy" alt="فروش ویژه لوازم الکترونیکی مدرن">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/2228561/pexels-photo-2228561.jpeg?auto=compress&cs=tinysrgb&w=1500&h=600&fit=crop" class="slide lazy" alt="مجموعه کتاب‌های جدید و پرفروش">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/6438762/pexels-photo-6438762.jpeg?auto=compress&cs=tinysrgb&w=1500&h=600&fit=crop" class="slide lazy" alt="مبلمان و دکوراسیون منزل">
             </div>
             <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
             <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
@@ -121,40 +131,40 @@
             <div class="card">
                 <h2>لوازم الکترونیکی</h2>
                 <div class="card-content-grid">
-                    <div><img src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="گوشی‌های هوشمند"><p>گوشی‌های هوشمند</p></div>
-                    <div><img src="https://images.pexels.com/photos/4005596/pexels-photo-4005596.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="لپ‌تاپ‌ها"><p>لپ‌تاپ‌ها</p></div>
-                    <div><img src="https://images.pexels.com/photos/5721865/pexels-photo-5721865.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="تلویزیون"><p>تلویزیون</p></div>
-                    <div><img src="https://images.pexels.com/photos/3585093/pexels-photo-3585093.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="لوازم جانبی"><p>لوازم جانبی</p></div>
+                    <div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" class="lazy" alt="گوشی‌های هوشمند"><p>گوشی‌های هوشمند</p></div>
+                    <div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/4005596/pexels-photo-4005596.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" class="lazy" alt="لپ‌تاپ‌ها"><p>لپ‌تاپ‌ها</p></div>
+                    <div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/5721865/pexels-photo-5721865.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" class="lazy" alt="تلویزیون"><p>تلویزیون</p></div>
+                    <div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/3585093/pexels-photo-3585093.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" class="lazy" alt="لوازم جانبی"><p>لوازم جانبی</p></div>
                 </div>
                 <a href="#">بیشتر ببینید</a>
             </div>
             <div class="card">
                 <h2>خانه و آشپزخانه</h2>
                 <div class="card-content-grid">
-                    <div><img src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="مبلمان"><p>مبلمان</p></div>
-                    <div><img src="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="دکوراسیون"><p>دکوراسیون</p></div>
-                    <div><img src="https://images.pexels.com/photos/5842843/pexels-photo-5842843.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="لوازم پخت و پز"><p>لوازم پخت و پز</p></div>
-                    <div><img src="https://images.pexels.com/photos/4239031/pexels-photo-4239031.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="لوازم نظافت"><p>لوازم نظافت</p></div>
+                    <div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" class="lazy" alt="مبلمان"><p>مبلمان</p></div>
+                    <div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" class="lazy" alt="دکوراسیون"><p>دکوراسیون</p></div>
+                    <div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/5842843/pexels-photo-5842843.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" class="lazy" alt="لوازم پخت و پز"><p>لوازم پخت و پز</p></div>
+                    <div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/4239031/pexels-photo-4239031.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" class="lazy" alt="لوازم نظافت"><p>لوازم نظافت</p></div>
                 </div>
                 <a href="#">بیشتر ببینید</a>
             </div>
             <div class="card">
                 <h2>مد و پوشاک</h2>
                 <div class="card-content-grid">
-                    <div><img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="لباس زنانه"><p>لباس زنانه</p></div>
-                    <div><img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="لباس مردانه"><p>لباس مردانه</p></div>
-                    <div><img src="https://images.pexels.com/photos/1478442/pexels-photo-1478442.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="کفش"><p>کفش</p></div>
-                    <div><img src="https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="ساعت"><p>ساعت</p></div>
+                    <div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" class="lazy" alt="لباس زنانه"><p>لباس زنانه</p></div>
+                    <div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" class="lazy" alt="لباس مردانه"><p>لباس مردانه</p></div>
+                    <div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/1478442/pexels-photo-1478442.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" class="lazy" alt="کفش"><p>کفش</p></div>
+                    <div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" class="lazy" alt="ساعت"><p>ساعت</p></div>
                 </div>
                 <a href="#">بیشتر ببینید</a>
             </div>
             <div class="card">
                 <h2>کتاب و لوازم تحریر</h2>
                 <div class="card-content-grid">
-                    <div><img src="https://images.pexels.com/photos/2041556/pexels-photo-2041556.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="رمان"><p>رمان و داستان</p></div>
-                    <div><img src="https://images.pexels.com/photos/256450/pexels-photo-256450.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="کتاب کودک"><p>کتاب کودک</p></div>
-                    <div><img src="https://images.pexels.com/photos/265076/pexels-photo-265076.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="کتاب درسی"><p>کمک درسی</p></div>
-                    <div><img src="https://images.pexels.com/photos/6334351/pexels-photo-6334351.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" alt="نوشت افزار"><p>نوشت افزار</p></div>
+                    <div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/2041556/pexels-photo-2041556.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" class="lazy" alt="رمان"><p>رمان و داستان</p></div>
+                    <div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/256450/pexels-photo-256450.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" class="lazy" alt="کتاب کودک"><p>کتاب کودک</p></div>
+                    <div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/265076/pexels-photo-265076.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" class="lazy" alt="کتاب درسی"><p>کمک درسی</p></div>
+                    <div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/6334351/pexels-photo-6334351.jpeg?auto=compress&cs=tinysrgb&w=300&h=230&fit=crop" class="lazy" alt="نوشت افزار"><p>نوشت افزار</p></div>
                 </div>
                 <a href="#">بیشتر ببینید</a>
             </div>
@@ -167,12 +177,12 @@
                 <button class="carousel-btn prev-carousel-btn"><i class="fas fa-chevron-left"></i></button>
                 <div class="carousel-track-container">
                     <div class="carousel-track">
-                        <div class="product-item"><img src="https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="کتاب باز با صفحات واضح"><p>کتاب ملت عشق</p><div class="rating"><i class="fas fa-star"></i> 4.8</div><p class="price">۲۵۰,۰۰۰ تومان</p></div>
-                        <div class="product-item"><img src="https://images.pexels.com/photos/2904142/pexels-photo-2904142.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="کتاب با جلد تیره"><p>کتاب بوف کور</p><div class="rating"><i class="fas fa-star"></i> 4.5</div><p class="price">۱۸۰,۰۰۰ تومان</p></div>
-                        <div class="product-item"><img src="https://images.pexels.com/photos/1165999/pexels-photo-1165999.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="کتابی با جلد رنگارنگ"><p>کتاب شازده کوچولو</p><div class="rating"><i class="fas fa-star"></i> 4.9</div><p class="price">۱۲۰,۰۰۰ تومان</p></div>
-                        <div class="product-item"><img src="https://images.pexels.com/photos/2228580/pexels-photo-2228580.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="کتاب با طرح کلاسیک"><p>کتاب صد سال تنهایی</p><div class="rating"><i class="fas fa-star"></i> 4.7</div><p class="price">۳۱۰,۰۰۰ تومان</p></div>
-                        <div class="product-item"><img src="https://images.pexels.com/photos/1319854/pexels-photo-1319854.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="کتابی با جلد روشن"><p>کتاب کیمیاگر</p><div class="rating"><i class="fas fa-star"></i> 4.6</div><p class="price">۱۹۵,۰۰۰ تومان</p></div>
-                        <div class="product-item"><img src="https://images.pexels.com/photos/2904142/pexels-photo-2904142.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="کتاب با جلد تیره"><p>کتاب بوف کور</p><div class="rating"><i class="fas fa-star"></i> 4.5</div><p class="price">۱۸۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" class="lazy" alt="کتاب باز با صفحات واضح"><p>کتاب ملت عشق</p><div class="rating"><i class="fas fa-star"></i> 4.8</div><p class="price">۲۵۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/2904142/pexels-photo-2904142.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" class="lazy" alt="کتاب با جلد تیره"><p>کتاب بوف کور</p><div class="rating"><i class="fas fa-star"></i> 4.5</div><p class="price">۱۸۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/1165999/pexels-photo-1165999.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" class="lazy" alt="کتابی با جلد رنگارنگ"><p>کتاب شازده کوچولو</p><div class="rating"><i class="fas fa-star"></i> 4.9</div><p class="price">۱۲۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/2228580/pexels-photo-2228580.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" class="lazy" alt="کتاب با طرح کلاسیک"><p>کتاب صد سال تنهایی</p><div class="rating"><i class="fas fa-star"></i> 4.7</div><p class="price">۳۱۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/1319854/pexels-photo-1319854.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" class="lazy" alt="کتابی با جلد روشن"><p>کتاب کیمیاگر</p><div class="rating"><i class="fas fa-star"></i> 4.6</div><p class="price">۱۹۵,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/2904142/pexels-photo-2904142.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" class="lazy" alt="کتاب با جلد تیره"><p>کتاب بوف کور</p><div class="rating"><i class="fas fa-star"></i> 4.5</div><p class="price">۱۸۰,۰۰۰ تومان</p></div>
                         
                     </div>
                 </div>
@@ -186,11 +196,11 @@
                  <button class="carousel-btn prev-carousel-btn"><i class="fas fa-chevron-left"></i></button>
                 <div class="carousel-track-container">
                     <div class="carousel-track">
-                        <div class="product-item"><img src="https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="هدفون بی سیم روی سر"><p>هدفون بی سیم</p><div class="rating"><i class="fas fa-star"></i> 4.4</div><p class="price">۱,۲۰۰,۰۰۰ تومان</p></div>
-                        <div class="product-item"><img src="https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="ساعت هوشمند روی مچ دست"><p>ساعت هوشمند جدید</p><div class="rating"><i class="fas fa-star"></i> 4.7</div><p class="price">۲,۵۰۰,۰۰۰ تومان</p></div>
-                        <div class="product-item"><img src="https://images.pexels.com/photos/5632349/pexels-photo-5632349.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="دستگاه قهوه ساز برقی"><p>دستگاه قهوه ساز</p><div class="rating"><i class="fas fa-star"></i> 4.6</div><p class="price">۳,۱۰۰,۰۰۰ تومان</p></div>
-                        <div class="product-item"><img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="یک جفت کفش ورزشی"><p>کفش مخصوص دویدن</p><div class="rating"><i class="fas fa-star"></i> 4.8</div><p class="price">۱,۸۵۰,۰۰۰ تومان</p></div>
-                        <div class="product-item"><img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="دوربین عکاسی دیجیتال"><p>دوربین عکاسی DSLR</p><div class="rating"><i class="fas fa-star"></i> 4.9</div><p class="price">۱۵,۷۰۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" class="lazy" alt="هدفون بی سیم روی سر"><p>هدفون بی سیم</p><div class="rating"><i class="fas fa-star"></i> 4.4</div><p class="price">۱,۲۰۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" class="lazy" alt="ساعت هوشمند روی مچ دست"><p>ساعت هوشمند جدید</p><div class="rating"><i class="fas fa-star"></i> 4.7</div><p class="price">۲,۵۰۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/5632349/pexels-photo-5632349.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" class="lazy" alt="دستگاه قهوه ساز برقی"><p>دستگاه قهوه ساز</p><div class="rating"><i class="fas fa-star"></i> 4.6</div><p class="price">۳,۱۰۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" class="lazy" alt="یک جفت کفش ورزشی"><p>کفش مخصوص دویدن</p><div class="rating"><i class="fas fa-star"></i> 4.8</div><p class="price">۱,۸۵۰,۰۰۰ تومان</p></div>
+                        <div class="product-item"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" class="lazy" alt="دوربین عکاسی دیجیتال"><p>دوربین عکاسی DSLR</p><div class="rating"><i class="fas fa-star"></i> 4.9</div><p class="price">۱۵,۷۰۰,۰۰۰ تومان</p></div>
                     </div>
                 </div>
                 <button class="carousel-btn next-carousel-btn"><i class="fas fa-chevron-right"></i></button>
@@ -248,6 +258,63 @@
 
     <!-- Custom Script -->
     <script src="script.js"></script>
+
+    <!-- Lazy Loading Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+            if ("IntersectionObserver" in window) {
+                let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            let lazyImage = entry.target;
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImage.classList.remove("lazy");
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
+                    });
+                });
+
+                lazyImages.forEach(function(lazyImage) {
+                    lazyImageObserver.observe(lazyImage);
+                });
+            } else {
+                // Fallback for older browsers
+                let active = false;
+
+                const lazyLoad = function() {
+                    if (active === false) {
+                        active = true;
+
+                        setTimeout(function() {
+                            lazyImages.forEach(function(lazyImage) {
+                                if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
+                                    lazyImage.src = lazyImage.dataset.src;
+                                    lazyImage.classList.remove("lazy");
+
+                                    lazyImages = lazyImages.filter(function(image) {
+                                        return image !== lazyImage;
+                                    });
+
+                                    if (lazyImages.length === 0) {
+                                        document.removeEventListener("scroll", lazyLoad);
+                                        window.removeEventListener("resize", lazyLoad);
+                                        window.removeEventListener("orientationchange", lazyLoad);
+                                    }
+                                }
+                            });
+                            active = false;
+                        }, 200);
+                    }
+                };
+
+                document.addEventListener("scroll", lazyLoad);
+                window.addEventListener("resize", lazyLoad);
+                window.addEventListener("orientationchange", lazyLoad);
+            }
+        });
+    </script>
 
 </body>
 </html>
